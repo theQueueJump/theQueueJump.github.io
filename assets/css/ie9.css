@@ -1,33 +1,50 @@
 /*
-	Aerial by HTML5 UP
+	Fractal by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Wrapper */
+/* Spotlight */
 
-	#wrapper {
-		opacity: 1;
+	.spotlight .image {
+		width: 25%;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
-/* Overlay */
+	.spotlight .content {
+		width: 65%;
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-	#overlay {
-		opacity: 1;
+	.spotlight:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.spotlight:nth-child(2n) .image {
+		margin: 0 3em 0 0;
+	}
+
+	.spotlight:nth-child(2n) .content {
+		text-align: left;
 	}
 
 /* Header */
 
 	#header {
-		opacity: 1;
+		height: auto;
+		text-align: center;
 	}
 
-		#header nav li {
-			opacity: 1;
+		#header .content {
+			display: inline-block;
+			vertical-align: middle;
 		}
 
-/* Footer */
-
-	#footer {
-		background-image: url("images/ie/footer.svg");
-	}
+		#header .image {
+			display: inline-block;
+			vertical-align: middle;
+		}
